@@ -1,5 +1,10 @@
 import streamlit as st
-import langchain
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.vectorstores import Chroma
+from langchain.docstore.document import Document
+from langchain.prompts import PromptTemplate
+from langchain.indexes.vectorstore import VectorstoreIndexCreator
 
 from langchain.document_loaders import UnstructuredURLLoader
 
