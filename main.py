@@ -5,7 +5,8 @@ from langchain.vectorstores import Chroma
 from langchain.docstore.document import Document
 from langchain.prompts import PromptTemplate
 from langchain.indexes.vectorstore import VectorstoreIndexCreator
-
+from langchain.chains.question_answering import load_qa_chain
+from langchain.llms import OpenAI
 from langchain.document_loaders import UnstructuredURLLoader
 
 urls = []
